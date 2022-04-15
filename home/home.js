@@ -4,4 +4,4 @@ var savedValue = localStorage.getItem("emaili");
 //printo vleren qe ka savedValue
 console.log(savedValue);
 
-document.getElementById("Titulli").innerHTML = savedValue;
+document.getElementById("Titulli").innerHTML = "Hello, " + savedValue + "!";
