@@ -1,10 +1,8 @@
-<script>
-if(email === emailISakte1 && password === pswISakte1){
-        window.location = "../signup/signup.html";
-    }else if(email === emailISakte2 && password === pswISakte2){
-        window.location = "../signup/signup.html";
-    }else{
-         alert("wrong username/password")
-     }
+function doSignUp() {
+
+    var email = document.getElementById("email").value
+    localStorage.setItem("email", email);
+
+    var password = document.getElementById("psw").value
+    localStorage.setItem("psw", password);
 }
-</script>
