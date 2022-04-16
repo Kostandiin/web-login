@@ -1,31 +1,22 @@
-function doLogin(){
-                
-    
-    //2. krijojme ne variabel qe marrim objektin e email input
-    var email = document.getElementById("email").value
-    console.log(email)
+function doLogin() {
+  //Marrim vleren e email nga HTML dhe e ruajme tek typedEmail
+  var typedEmail = document.getElementById("email").value;
 
-    var password = document.getElementById("password").value
-    console.log(password)
-    
-    //krahasojme nese vlera e shkruar 3. me vleren e kredencialit te sakte 1.
-    // if(email === emailISakte && password === pswISakte){
-    //     alert("logged in")
-    // }else{
-    //     alert("wrong username/password")
-    // }
+  //Marrim vleren e password nga HTML dhe e ruajme tek typedPassword
+  var typedPassword = document.getElementById("pass").value;
 
+  //Lexojme vleren e user-email nga localStorage dhe e ruajme tek savedEmail
+  var savedEmail = localStorage.getItem("user-email");
+  //Lexojme vleren e user-password nga localStorage dhe e ruajme tek savedPassword
+  var savedPassword = localStorage.getItem("user-password");
 
-    if(email === email && password === password){
-        window.location = "../home/home.html";
-    }else{
-         alert("wrong username/password")
-     }
-
-    localStorage.setItem("emaili", email);
-    localStorage.setItem("passwordi",password);
+  if (typedEmail === savedEmail && typedPassword === savedPassword) {
+    window.location = "../home/home.html";
+  } else {
+    alert("wrong username/password");
+  }
 }
 
-function goToSignUp(){
-window.location = "../signup/signup.html";
+function goToSignUp() {
+  window.location = "../signup/signup.html";
 }

@@ -1,49 +1,98 @@
 <html>
   <head>
     <script src="signup.js"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
 
-    <form action="action_page.php">
-    </form>
+    <form action="action_page.php"></form>
   </head>
-  
+
   <div class="container">
     <h1>Regjistrohuni</h1>
     <p>Ju lutemi plotesoni te dhenat tuaja per te krijuar nje llogari.</p>
-    <hr>
+    <hr />
 
     <label for="name"><b>Emri</b></label>
-    <input type="text" placeholder="Vendosni Emrin" name="name" id="name" required>
+    <input
+      type="text"
+      placeholder="Vendosni Emrin"
+      name="name"
+      id="name"
+      required
+    />
 
     <label for="last-name"><b>Mbiemri</b></label>
-    <input type="text" placeholder="Vendosni Mbiemrin" name="last-name" id="last-name" required>
+    <input
+      type="text"
+      placeholder="Vendosni Mbiemrin"
+      name="last-name"
+      id="last-name"
+      required
+    />
 
     <label for="username"><b>username</b></label>
-    <input type="text" placeholder="Vendosni Username" name="Username" id="username" required>
+    <input
+      type="text"
+      placeholder="Vendosni Username"
+      name="Username"
+      id="username"
+      required
+    />
 
     <label for="birthday"><b>Ditelindja</b></label>
-    <input type="text" placeholder="Vendosni Ditelindjen" name="birthday" id="birthday" required>
+    <input
+      type="text"
+      placeholder="Vendosni Ditelindjen"
+      name="birthday"
+      id="birthday"
+      required
+    />
 
     <label for="phone-number"><b>Nr telefoni</b></label>
-    <input type="text" placeholder="Vendosni Nr telefoni" name="phone-number" id="phone-number" required>
+    <input
+      type="text"
+      placeholder="Vendosni Nr telefoni"
+      name="phone-number"
+      id="phone-number"
+      required
+    />
 
     <label for="email"><b>Emaili</b></label>
-    <input type="text" placeholder="Vendosni Emailin" name="email" id="email" required>
+    <input
+      type="text"
+      placeholder="Vendosni Emailin"
+      name="email"
+      id="email"
+      required
+    />
 
     <label for="psw"><b>Passwordi</b></label>
-    <input type="password" placeholder="Vendosni Passwordin" name="psw" id="psw" required>
+    <input
+      type="password"
+      placeholder="Vendosni Passwordin"
+      name="psw"
+      id="psw"
+      required
+    />
 
     <label for="psw-repeat"><b>Rishkruaj Passwordin</b></label>
-    <input type="password" placeholder="Rishkruaje Passwordin" name="psw-repeat" id="psw-repeat" required>
-    <hr>
+    <input
+      type="password"
+      placeholder="Rishkruaje Passwordin"
+      name="psw-repeat"
+      id="psw-repeat"
+      required
+    />
+    <hr />
 
-    <button type="submit" class="registerbtn" onclick="doSignUp()">Regjistrohu</button>
+    <button type="submit" class="registerbtn" onclick="doSignUp()">
+      Regjistrohu
+    </button>
   </div>
   <div class="container signin">
     <p>Keni nje llogari ekzistuese? <a href="#">Sign in</a>.</p>
   </div>
   <body>
-      <div style="width: 200px"></div>
-      <button onclick="location.href='../Login/index.html'">Kthehu mbrapa</button>
+    <div style="width: 200px"></div>
+    <button onclick="location.href='../Login/index.html'">Kthehu mbrapa</button>
   </body>
 </html>

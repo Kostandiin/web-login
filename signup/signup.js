@@ -1,8 +1,11 @@
 function doSignUp() {
+  //Marrim vleren e email nga HTML dhe e ruajme tek variable signupEmail
+  var signupEmail = document.getElementById("email").value;
+  //Ruajme vleren e signupEmail ne localStorage me key: user-email
+  localStorage.setItem("user-email", signupEmail);
 
-    var email = document.getElementById("email").value
-    localStorage.setItem("email", email);
-
-    var password = document.getElementById("psw").value
-    localStorage.setItem("psw", password);
+  //Marrim vleren e password nga HTML dhe e ruajme tek variable signupPassword
+  var signupPassword = document.getElementById("psw").value;
+  //Ruajme vleren e signupPassword ne localStorage me key: user-password
+  localStorage.setItem("user-password", signupPassword);
 }
