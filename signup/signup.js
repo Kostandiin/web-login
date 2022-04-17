@@ -5,7 +5,13 @@ function doSignUp() {
   localStorage.setItem("user-email", signupEmail);
 
   //Marrim vleren e password nga HTML dhe e ruajme tek variable signupPassword
-  var signupPassword = document.getElementById("psw").value;
+  var signupPassword = document.getElementById("pass").value;
   //Ruajme vleren e signupPassword ne localStorage me key: user-password
   localStorage.setItem("user-password", signupPassword);
+
+  goToLogIn();
+}
+
+function goToLogIn() {
+  window.location = "../login/login.html";
 }
