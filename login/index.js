@@ -11,7 +11,7 @@ function doLogin() {
   var savedPassword = localStorage.getItem("user-password");
 
   if (typedEmail === savedEmail && typedPassword === savedPassword) {
-    window.location = "../home/home.html";
+    window.location = "../home/feed.html";
   } else {
     alert("wrong username/password");
   }
